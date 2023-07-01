@@ -4,12 +4,12 @@
     "version": "1.0",
     "description": "Removes cookie popups from certain websites.",
     "icons": {
-        "48": "icon.webp"
+        "48": "icon.png"
     },
     "permissions": [
         "webRequest",
         "webRequestBlocking",
-        "<all_urls>"
+        "https://*.google.com/*"
     ],
     "background": {
         "scripts": ["background.js"]
