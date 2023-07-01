@@ -6,14 +6,12 @@
     "icons": {
         "48": "icon.webp"
     },
-    "content_scripts": [
-        {
-            "matches": [
-                "*://www.google.com/*"
-            ],
-            "js": [
-                "google.js"
-            ]
-        }
-    ]
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    }
 }
